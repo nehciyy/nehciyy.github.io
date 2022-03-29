@@ -1,0 +1,224 @@
+/* BLOG MAIN CONTENT */
+/* FONT STYLING FOR HEADER OF BLOG PAGE */
+h1{
+  font-family: 'Balsamiq Sans', cursive;
+}
+/* FONT STYLING FOR TITLE OF ITEM */
+h4{
+  font-family: 'Frank Ruhl Libre', serif;
+  font-weight: bold, 400;
+}
+/* GRID CONTAINER FOR INDIVIDUAL ITEM */
+.grid-container {
+  display: grid;
+  max-width: 70%;
+  align-items: center;
+  background-color: #f1c7d3;
+  padding: 2%;
+  margin: 0 15%;
+  grid-template-areas:
+    'image image header1 header1 header1 header1'
+    'image image rating1 rating1 starlast starlast'
+    'image image rating2 rating2 starcover starcover';
+  gap: 5%;
+}
+/* TITLE OF ITEM */
+.blogheader {
+  grid-area: header1;
+}
+/* STAR RATING FOR LASTING */
+.rating1 {
+  grid-area: rating1;
+}
+/* STARS FOR LASTING */
+.starlast {
+  grid-area: starlast;
+}
+/* STAR RATING FOR COVERAGE */
+.rating2 {
+  grid-area: rating2;
+}
+/* STARS FOR COVERAGE */
+.starcover {
+  grid-area: starcover;
+}
+/* IMAGE OF ITEM */
+.grid-itemImage {
+  grid-area: image;
+}
+.blogPICTURES{
+  width:300px;
+  height:300px;
+}
+
+/* USERS' NAME AND COMMENT OF THE PRODUCT */
+.user-inputs {
+  background-color: #f1c7d3;
+  margin: 0 15%;
+  display: flex;
+  padding-bottom: 20px;
+}
+/* FOR NAME INPUT */
+.nameArea{
+  background-color: white;
+  border-style: solid;
+  border-color: black;
+  padding:1%;
+  margin-left:1%;
+  height:auto;
+  outline: solid;
+  outline-width: thin;
+}
+/* FOR COMMENT INPUT */
+.textComment {
+  max-height: 70%;
+  resize: none;
+  align-items: center;
+  width: 85%;
+  margin-left: 2%;
+  margin-right: 0;
+  background-color: white;
+  outline: solid;
+  padding-top: 15px;
+  text-align: center;
+}
+/* FOR COMMENT BUTTON */
+#comment-btn1 {
+  max-height: 90%;
+  font-weight: bold;
+  outline: solid;
+  outline-color: black;
+  cursor: pointer;
+  width: 10%;
+  padding: 4px;
+  color: white;
+  margin-right: 1%;
+  background-color: #a46c9d;
+}
+#comment-btn1:hover {
+  width:20%;
+}
+/* COMMENTS FROM USERS WILL BE SHOWN HERE */
+.commentBox{
+  background-color: #f1c7d3;
+  margin: 0 15%;
+  border-style: solid;
+  text-indent:7px;
+}
+/* RECORDED COMMENTS  */
+#commentTitle{
+  background-color: white;
+  border-style:solid;
+  margin:1%;
+  text-indent:7px;
+}
+
+/* RESPONSIVE TO MOBILE VERSION */
+/* DEFAULT RESPONIVE VERSION */
+@media screen and (max-width:500px) {
+  .grid-container {
+    display: block;
+  }
+
+  .nameArea{
+    font-size:182%;
+    text-align:center;
+    width:60%;
+  }
+
+  .user-inputs {
+    display: flex;
+    font-size: 53%;
+    padding-right: 9px;
+    padding-bottom: 9px;
+  }
+
+  #comment-btn1 {
+    width: 20%;
+    font-size: 12px;
+  }
+
+  #comment-btn1:hover {
+    width:45%;
+  }
+
+  .textComment {
+    font-size: 160%;
+    margin-right:0;
+    padding:3%;
+
+  }
+
+}
+/* DEFAULT RESPONIVE VERSION */
+/* DIFFERENT MOBILE VERSION */
+/* SAMSUNG GALAXY S8+ */
+@media only screen
+  and (min-device-width: 320px)
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: portrait) {
+
+.blogPICTURES{
+  width:100%;
+}
+
+#comment-btn1 {
+  width: 30%;
+  font-size: 12px;
+}
+
+#comment-btn1:hover {
+  width:45%;
+}
+
+}
+/* SAMSUNG GALAXY S8+ */
+
+/* IPHONE SE & IPHONE XR & PIXEL 5 */
+@media only screen
+  and (min-device-width: 375px)
+  and (max-device-width: 667px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: portrait) {
+
+.blogPICTURES{
+  width:100%;
+}
+
+#comment-btn1 {
+  width: 30%;
+  font-size: 12px;
+}
+
+#comment-btn1:hover {
+  width:45%;
+}
+
+}
+/* IPHONE SE & IPHONE XR & PIXEL 5 */
+
+/* IPHONE 12 PRO & SAMSNG GALAXY S20 ULTRA*/
+@media only screen
+  and (min-device-width: 375px)
+  and (max-device-width: 812px)
+  and (-webkit-min-device-pixel-ratio: 3)
+  and (orientation: portrait) {
+
+.blogPICTURES{
+  width:100%;
+}
+
+#comment-btn1 {
+  width: 30%;
+  font-size: 12px;
+}
+
+#comment-btn1:hover {
+  width:45%;
+}
+
+}
+/* IPHONE 12 PRO & SAMSNG GALAXY S20 ULTRA*/
+/* RESPONSIVE TO MOBILE VERSION */
+/* BLOG MAIN CONTENT */

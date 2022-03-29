@@ -1,0 +1,228 @@
+/* NEW ARRIVALS MAIN CONTENT */
+/* FONT STYLE FOR THE MAIN CONTENT */
+main{
+  font-family: 'Karla', sans-serif;
+}
+
+h1{
+  font-family: 'Balsamiq Sans', cursive;
+}
+/* ENTIRE MAIN CONTENT OF NEW ARRIVALS PAGE */
+.combineArrival {
+  display: -webkit-inline-box;
+  width: 90%
+}
+/* FILTER BUTTONS AND HEADER */
+.filterArrival {
+  display: inline-grid;
+  margin-left: 3%;
+  background-color: #758979;
+  border-radius: 20px;
+  padding: 3px;
+}
+
+.filterArrival>h3 {
+  color: white;
+  text-align: center;
+  font-family: 'Frank Ruhl Libre', serif;
+}
+/* FILTER BUTTONS */
+.filterButtonArrival {
+  background-color: #CBDECF;
+  margin: 2% 0;
+  transition: transform 0.3s ease;
+  transform: translateX(0px);
+  border-radius: 20px;
+  font-family: 'Frank Ruhl Libre', serif;
+  font-weight: bold;
+  color:black;
+}
+
+.filterButtonArrival:hover {
+  transform: translateX(10px);
+}
+
+.filterButtonArrival:focus {
+  background-color: #68FF87;
+}
+/* GRID CONTAINER FOR THE MAIN CONTENTS (9 ITEMS) */
+.grid-containerArrival {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  padding: 3%;
+  margin: 0 3%;
+  gap: 2%;
+}
+/* GRID CONTAINER FOR INDIVIDUAL ITEM */
+.grid-item {
+  background-color: #CBDECF;
+  border: 3px solid rgba(0, 0, 0, 0.7);
+  font-size: 30px;
+  text-align: center;
+  display: grid;
+  transition: transform 0.3s ease;
+  transform: translateY(0px);
+}
+
+.grid-item:hover {
+  transform: translateY(10px);
+}
+/* IMAGE OF ITEM */
+.arrivalImage {
+  width: 62%;
+  height: 87%;
+  float: left;
+  padding-left: 5%;
+  padding-top: 4%;
+}
+/* TITLE, DESCRIPTION AND PRICE OF ITEM */
+.textArrival {
+  text-align: left;
+  font-size: 70%;
+  padding-left: 5%;
+  padding-right: 4px;
+  max-width: 385px;
+}
+
+/* ADJUSTING USING NORMAL RESPONSIVE MODE
+(minimize screen and making the browser to smallest size
+instead of using the inspect dimensions of default mobile sizes) */
+@media screen and (max-width:500px) {
+  .grid-containerArrival {
+    display: initial;
+    gap: 10%;
+  }
+
+  .grid-item {
+    margin: 5%;
+  }
+
+  .filterArrival {
+    display: inline-flex;
+    gap: 1%;
+    background-color: #758979;
+    padding-right: 48px;
+    border-radius: 26px;
+  }
+
+  .filterArrival>h3 {
+    margin-top: 5%;
+    margin-right: 3%;
+    padding-left: 1%;
+  }
+
+  .filterButtonArrival {
+    padding: 0px;
+  }
+  /* ADJUSTING USING NORMAL RESPONSIVE MODE
+  (minimize screen and making the browser to smallest size
+  instead of using the inspect dimensions of default mobile sizes) */
+
+  /* SAMSUNG GALAXY S8+ */
+  @media only screen
+    and (min-device-width: 320px)
+    and (max-device-width: 480px)
+    and (-webkit-min-device-pixel-ratio: 2)
+    and (orientation: portrait) {
+      .grid-containerArrival {
+        display: initial;
+        gap: 10%;
+      }
+
+      .grid-item {
+        margin: 5%;
+      }
+
+      .filterArrival {
+        display: inline-flex;
+        gap: 1%;
+        background-color: #758979;
+        padding-right: 34px;
+        border-radius: 26px;
+        margin-left:0px;
+      }
+
+      .filterArrival>h3 {
+        margin-top: 5%;
+        margin-right: 0px;
+        padding-left: 1%;
+        font-size: 111%;
+      }
+
+      .filterButtonArrival {
+        padding: 0px;
+      }
+    }
+  /* SAMSUNG GALAXY S8+ */
+  /* IPHONE SE & IPHONE XR & PIXEL 5 */
+  @media only screen
+    and (min-device-width: 375px)
+    and (max-device-width: 667px)
+    and (-webkit-min-device-pixel-ratio: 2)
+    and (orientation: portrait) {
+      .grid-containerArrival {
+        display: initial;
+        gap: 10%;
+      }
+
+      .grid-item {
+        margin: 5%;
+      }
+
+      .filterArrival {
+        display: inline-flex;
+        gap: 1%;
+        background-color: #758979;
+        padding-right: 33px;
+        border-radius: 26px;
+        margin-left:0px;
+      }
+
+      .filterArrival>h3 {
+        margin-top: 5%;
+        margin-right: 0px;
+        padding-left: 1%;
+
+      }
+
+      .filterButtonArrival {
+        padding: 0px;
+      }
+    }
+  /* IPHONE SE & IPHONE XR & PIXEL 5 */
+/* IPHONE 12 PRO & SAMSNG GALAXY S20 ULTRA*/
+  @media only screen
+    and (min-device-width: 375px)
+    and (max-device-width: 812px)
+    and (-webkit-min-device-pixel-ratio: 3)
+    and (orientation: portrait) {
+      .grid-containerArrival {
+        display: initial;
+        gap: 10%;
+      }
+
+      .grid-item {
+        margin: 5%;
+      }
+
+      .filterArrival {
+        display: inline-flex;
+        gap: 1%;
+        background-color: #758979;
+        padding-right: 47px;
+        border-radius: 26px;
+        margin-left:0px;
+      }
+
+      .filterArrival>h3 {
+        margin-top: 5%;
+        margin-right: 3%;
+        padding-left: 1%;
+      }
+
+      .filterButtonArrival {
+        padding: 0px;
+      }
+    }
+/* IPHONE 12 PRO & SAMSNG GALAXY S20 ULTRA*/
+  /* NEW ARRIVALS MAIN CONTENT */

@@ -1,0 +1,383 @@
+<!Doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> Trending </title>
+  <!-- LINK TO CSS FOR NAVIGATION BAR, SERACH BAR, LOGO, SUCCESSFUL SUBSCRIPTION AND FOOTER -->
+  <link rel="stylesheet" href="Stylesheets/mainstyles.css" />
+  <!-- LINK TO CSS FOR MAIN CONTENT OF TRENDING PAGE -->
+  <link rel="stylesheet" href="Stylesheets/trending.css" />
+  <!-- AWESOME NOTIFICATIONS STYLESHEET -->
+  <link rel="stylesheet" href="awesomeNotifications/dist/style.css"></link>
+  <!-- GOOGLE FONTS LINK -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans:ital,wght@0,400;0,700;1,400&family=Dancing+Script:wght@700&family=Frank+Ruhl+Libre&family=Karla:wght@200;300&family=Lora:ital@0;1&display=swap" rel="stylesheet">
+  <!-- BOOTSTRAP -->
+  <link rel="stylesheet" href="bootstrap-5.1.3-dist/bootstrap-5.1.3-dist/css/bootstrap.min.css">
+  <!-- SOCIAL MEDIA ICONS FOR CONNECT WITH US -->
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+  <!-- SWEETALERT HANDLEBAR -->
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+  <!-- AWESOME NOTIFICATIONS HANDLEBAR -->
+  <script src="awesomeNotifications/dist/index.var.js"></script>
+  <!-- JAVASCRIPT FOR FOOTER SUBSCRIPTION -->
+  <script src="Script/footersubscription.js" defer></script>
+  <!-- NAVIGATION BAR JAVASCRIPT -->
+  <script src="Script/navbar.js" defer></script>
+  <!-- JAVASCRIPT FOR FILTER HEADER AND BUTTON OF TRENDING PAGE -->
+  <script src="Script/filterTrend.js" defer></script>
+
+</head>
+
+<body>
+  <header>
+    <!-- HEADER ABOVE THE NAVIGATION BAR -->
+    <div class="topnav">
+      <!-- LOGO(makeupYM) -->
+      <div class="logo">
+        <a href="index.html" id="logo1">makeupYM</a>
+      </div>
+      <!-- SEARCH BAR -->
+      <div class="search-container">
+        <form action="/action_page.php">
+          <input type="text" placeholder="Search" name="search" id="search">
+          <button type="submit" id="searchbtn"><i class="fa fa-search"></i></button>
+        </form>
+      </div>
+    </div>
+
+    <br><br>
+    <!-- NAVIGATION BAR -->
+    <nav id="navbar">
+      <!-- CREATING A HAMBURGER MENU TAB -->
+      <a href="#" class="toggle-button">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </a>
+      <!-- LINKS OF NAV BAR -->
+      <div class="navbar-links">
+        <ul>
+          <li>
+            <button type="button" class="navigation">
+              <a href="newarrivals.html" style="text-decoration: none;color:black">New Arrivals</a>
+            </button>
+          </li>
+          <li>
+            <button type="button" class="navigation">
+              <a href="trending.html" style="text-decoration: none;color:black">Trending</a>
+            </button>
+          </li>
+          <li>
+            <button type="button" class="navigation">
+              <a href="subscribe.html" style="text-decoration: none;color:black">Subscribe</a>
+            </button>
+          </li>
+          <li>
+            <button type="button" class="navigation">
+              <a href="blog.html" style="text-decoration: none;color:black">Blog</a>
+            </button>
+          </li>
+          <li>
+            <button type="button" class="navigation">
+              <a href="tutorial.html" style="text-decoration: none;color:black">Tutorial</a>
+            </button>
+          </li>
+          <li>
+            <button type="button" class="navigation">
+              <a href="report.html" target="_blank" style="text-decoration: none;color:black">Report</a>
+            </button>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <br>
+  <!-- MAIN CONTENT -->
+  <main>
+    <!-- HEADER FOR TRENDING PAGE -->
+    <div class="heading" style="margin:0 2.5%; font-size:150%">
+      <h1>Trending</h1>
+    </div>
+    <!-- ENTIRE MAIN CONTENT OF TRENDING PAGE -->
+    <div class="combineTrend">
+      <!-- FILTER BUTTONS AND HEADER -->
+      <div class="filter">
+        <h3>Filter</h3>
+        <button type="button" class="filterButton" onclick="showAll()"> All </button>
+        <button type="button" class="filterButton" onclick="showFace()"> Face </button>
+        <button type="button" class="filterButton" onclick="showEyes()"> Eyes </button>
+        <button type="button" class="filterButton" onclick="showLips()"> Lips </button>
+        <button type="button" class="filterButton" onclick="showScent()"> Scent </button>
+        <button type="button" class="filterButton" onclick="showRemover()"> Makeup Remover </button>
+        <button type="button" class="filterButton" onclick="showCare()"> Skincare </button>
+      </div>
+
+      <br>
+      <!-- GRID CONTAINER FOR THE MAIN CONTENTS (9 ITEMS) -->
+      <div class="column">
+        <!-- GRID CONTAINER FOR INDIVIDUAL ITEM -->
+        <div class="grid-containerTrend face">
+          <!-- TITLE OF ITEM -->
+          <div class="trendheader">
+            <h4><b>
+              #1 NYX Professional Makeup 3C Palette - Color Correcting Concealer
+            </b></h4>
+          </div>
+          <!-- DESCRIPTION OF ITEM -->
+          <div class="description">
+            <p>
+              Correct and perfect your complexion with the NYX Professional Makeup 3C Palette Color Correcting Concealer, a professional makeup kit combining six concealer and corrector shades to suit all skin tones.
+            </p>
+          </div>
+
+          <br>
+          <!-- IMAGE OF ITEM -->
+          <div class="trendingImages">
+            <img class="trendingPICTURES" alt="NYX Professional Makeup 3C Palette - Color Correcting Concealer" src="Images/trending_image1.jpg">
+          </div>
+
+        </div>
+
+
+        <!-- GRID CONTAINER FOR INDIVIDUAL ITEM -->
+        <div class="grid-containerTrend face">
+          <!-- TITLE OF ITEM -->
+          <div class="trendheader">
+            <h4><b>
+              #2 GIORGIO ARMANI My Armani to Go Cushion
+            </b></h4>
+          </div>
+          <!-- DESCRIPTION OF ITEM -->
+          <div class="description">
+            <p>
+              Inspired by a luxury object, with unique design, craftsmanship and desirability, an object that cannot be imitated, the new red cushion is the inimitable.
+
+              More than a status symbol, it’s the ultimate cushion that will make each woman feel special.
+
+              The Armani woman becomes inimitable.
+            </p>
+          </div>
+          <br>
+          <!-- IMAGE OF ITEM -->
+          <div class="trendingImages">
+            <img class="trendingPICTURES" alt="GIORGIO ARMANI My Armani to Go Cushion" src="Images/trending_image2.jpg">
+          </div>
+
+        </div>
+
+
+        <!-- GRID CONTAINER FOR INDIVIDUAL ITEM -->
+        <div class="grid-containerTrend eyes">
+          <!-- TITLE OF ITEM -->
+          <div class="trendheader">
+            <h4><b>
+              #3 Perfect Diary Highly Pigmented Explorer Eyeshadow Palette With Brush Shimmer Matte Eye Makeup Waterproof Cosmetics 12 (Fox Palette)
+            </b></h4>
+          </div>
+          <!-- DESCRIPTION OF ITEM -->
+          <div class="description">
+            <p>
+              The core concept of “Perfect Diary” is “Unlimited Beauty” to let everyone not to be bounded by labels, but to embrace their uniqueness and expand the endless possibilities in lives.
+              Perfect Diary focuses on the exploration, modelization and expression of beauty, providing everyone with a beauty experience that is within reach and beyond expectation.
+            </p>
+          </div>
+          <br>
+          <!-- IMAGE OF ITEM -->
+          <div class="trendingImages">
+            <img class="trendingPICTURES" alt="Perfect Diary Highly Pigmented Explorer Eyeshadow Palette With Brush Shimmer Matte Eye Makeup Waterproof Cosmetics 12 (Fox Palette)" src="Images/trending_image3.jpg">
+          </div>
+
+        </div>
+
+        <!-- GRID CONTAINER FOR INDIVIDUAL ITEM -->
+        <div class="grid-containerTrend lips">
+          <!-- TITLE OF ITEM -->
+          <div class="trendheader">
+            <h4><b>
+              #4 YVES SAINT LAURENT TATOUAGE COUTURE VELVET CREAM LIQUID LIPSTICK
+            </b></h4>
+          </div>
+          <!-- DESCRIPTION OF ITEM -->
+          <div class="description">
+            <p>
+              This lip stain delivers high-impact color with an ultra-comfortable creamy soft wear thanks to its non-drying, velvet matte formula. Featuring the iconic Tatouage Couture applicator with a wider and fuller surface, it offers full
+              coverage
+              and high precision application in one stroke.
+            </p>
+          </div>
+          <br>
+          <!-- IMAGE OF ITEM -->
+          <div class="trendingImages">
+            <img class="trendingPICTURES" alt="YVES SAINT LAURENT TATOUAGE COUTURE VELVET CREAM LIQUID LIPSTICK" src="Images/trending_image4.jpg">
+          </div>
+
+        </div>
+
+
+        <div class="grid-containerTrend lips">
+          <div class="trendheader">
+            <h4><b>
+              #5 ROUGE DIOR - NEW LOOK LIMITED EDITION
+            </b></h4>
+          </div>
+
+          <div class="description">
+            <p>
+              An iconic long-wear Dior Lipstick in a limited-edition houndstooth design inspired by the collection that introduced Christian Dior to the world.
+            </p>
+          </div>
+
+          <br>
+          <div class="trendingImages">
+            <img class="trendingPICTURES" alt="ROUGE DIOR - NEW LOOK LIMITED EDITION" src="Images/trending_image5.jpg">
+          </div>
+
+        </div>
+
+
+        <!-- GRID CONTAINER FOR INDIVIDUAL ITEM -->
+        <div class="grid-containerTrend makeupRemover">
+          <!-- TITLE OF ITEM -->
+          <div class="trendheader">
+            <h4><b>
+              #6 Garnier Skin Naturals Micellar Cleansing Water (For Sensitive Skin)
+            </b></h4>
+          </div>
+          <!-- DESCRIPTION OF ITEM -->
+          <div class="description">
+            <p>
+              1st All-in-One Micellar Cleansing Water that purifies & removes make up in 1 gesture. Enriched with Micelles, it captures and lifts away residue from face, eyes & lips like a magnet. No need to rub to get rid of impurities and make up.
+              Our
+              refreshing formular is non-sticky, non-oily, and without a perfume, it is suitable for all skin types, including sensitive skin. Skin is perfectly clean, soft & looks healthy.
+            </p>
+          </div>
+          <br>
+          <!-- IMAGE OF ITEM -->
+          <div class="trendingImages">
+            <img class="trendingPICTURES" alt=" Garnier Skin Naturals Micellar Cleansing Water (For Sensitive Skin)" src="Images/trending_image6.jpg">
+          </div>
+
+        </div>
+
+
+        <!-- GRID CONTAINER FOR INDIVIDUAL ITEM -->
+        <div class="grid-containerTrend makeupRemover">
+          <!-- TITLE OF ITEM -->
+          <div class="trendheader">
+            <h4><b>
+              #7 Neutrogena Oil-Free Gentle Eye Makeup Remover (Pack of 3)
+            </b></h4>
+          </div>
+          <!-- DESCRIPTION OF ITEM -->
+          <div class="description">
+            <p>
+              Our gentle, ultra soft makeup remover wipes effectively dissolve 99.3% of your most stubborn makeup, even waterproof mascara - for clean, fresh looking skin in just one simple step. It leaves skin thoroughly clean with no heavy residue,
+              so
+              there's no need to rinse! Plus they’re gentle enough to use around the sensitive eye area, even if you wear contacts.
+            </p>
+          </div>
+          <br>
+          <!-- IMAGE OF ITEM -->
+          <div class="trendingImages">
+            <img class="trendingPICTURES" alt="Neutrogena Oil-Free Gentle Eye Makeup Remover (Pack of 3)" src="Images/trending_image7.jpg">
+          </div>
+
+        </div>
+
+
+        <!-- GRID CONTAINER FOR INDIVIDUAL ITEM -->
+        <div class="grid-containerTrend skinCare">
+          <!-- TITLE OF ITEM -->
+          <div class="trendheader">
+            <h4><b>
+              #8 Kiehl's Calendula Herbal Extract Alcohol-Free Toner
+            </b></h4>
+          </div>
+          <!-- DESCRIPTION OF ITEM -->
+          <div class="description">
+            <p>
+              Gently cleanses and soothes normal to oily skin types
+              Contains no alcohol or harsh synthetic drying agents
+              May be used to soothe and improve problem areas
+            </p>
+          </div>
+          <br>
+          <!-- IMAGE OF ITEM -->
+          <div class="trendingImages">
+            <img class="trendingPICTURES" alt=" Kiehl's Calendula Herbal Extract Alcohol-Free Toner" src="Images/trending_image8.png">
+          </div>
+
+        </div>
+
+
+        <!-- GRID CONTAINER FOR INDIVIDUAL ITEM -->
+        <div class="grid-containerTrend skinCare">
+          <!-- TITLE OF ITEM -->
+          <div class="trendheader">
+            <h4><b>
+              #9 Kiehl's Ultra Facial Cream with Squalane
+            </b></h4>
+          </div>
+          <!-- DESCRIPTION OF ITEM -->
+          <div class="description">
+            <p>
+              Discover our #1 hydrating moisturizer for all skin types, even sensitive, with Squalane and Glycerin. This ultra-moisturizing face cream strengthens the skin’s moisture barrier and provides 24-hour hydration for softer, smoother skin.
+            </p>
+          </div>
+          <br>
+          <!-- IMAGE OF ITEM -->
+          <div class="trendingImages">
+            <img class="trendingPICTURES" alt="Kiehl's Ultra Facial Cream with Squalane" src="Images/trending_image9.jpg">
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+  </main>
+  <br><br><br>
+  <!-- FOOTER -->
+  <footer id="footer">
+    <!-- FOOTER ROW CONTAINS "ABOUT US","CONNECT WITH US" AND "SUBSCRIBE TO NEWSLETTER" DISPLAYED AS FLEX SO THEY ARE ALIGNED HORIZONTALLY -->
+    <div class="footerRow">
+      <!-- ABOUT US -->
+      <div class="aboutus">
+        <h2>About Us</h2>
+        <p>Careers</p>
+        <p>Term of Use</p>
+        <p>Privacy Policy</p>
+        <p>FAQ</p>
+      </div>
+      <!-- CONNTECT WITH US -->
+      <div class="connectIcons">
+        <h2>Connect with us</h2>
+        <a href="#facebook" style="font-size:200%"><i class="fab fa-facebook"></i></a>
+        <a href="#instagram" style="font-size:200%"><i class="fab fa-instagram"></i></a>
+        <a href="#pinterest" style="font-size:200%"><i class="fab fa-pinterest-p"></i></a>
+        <a href="#youtube" style="font-size:200%"><i class="fab fa-youtube"></i></a>
+        <a href="#twitter" style="font-size:200%"><i class="fab fa-twitter"></i></a>
+      </div>
+      <!-- SUBSCRIBE TO OUR NEWSLETTER -->
+      <div class="subscribeButton">
+        <h2>Subscribe To Our Newsletter</h2>
+        <input type="email" name="email" id="subscribeEmail" placeholder="Enter Your Email address">
+        <button type="button" class="navigation" id="subscribeEmailbtn" style="margin:0px">
+          <a href="#" style="text-decoration: none; color:white">Subscribe</a>
+        </button>
+      </div>
+    </div>
+    <!-- COPYRIGHT -->
+    <div class="copyright" style="text-align:center">
+      <p>&copy; 2022 makeupYM by Yi-Chen Chiang </p>
+    </div>
+  </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,176 @@
+/*SUBSCRIPTION MAIN CONTENT*/
+/* MAIN CONTENT */
+#subscriptionMain {
+  background-image: url("../Images/main_page_animated_image2.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  width: 100%;
+}
+
+/* TEXT TO PROMOTE FOR FASTER SUBSCRIPTION */
+#subscriptionWrapper {
+  height: auto;
+  margin: auto;
+  min-height: 80vh;
+  padding: 75px 0px;
+  color: #919fc6;
+  text-align: center;
+  text-shadow: 5px 5px 0px #919fc6;
+}
+#subscriptionWrapper input:focus {
+  outline: none;
+}
+#subscriptionWrapper h1 {
+  font-size: 5em;
+  width: 60%;
+  margin: 0 auto;
+  font-family: 'Press Start 2P', cursive;
+  color: #a46c9d;
+}
+/* EMAIL SECTION TO SUBSCRIBE */
+#emailSection {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  margin-top: 50px;
+  margin-bottom: 20px;
+  box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 60);
+}
+#emailInput {
+  font-size: 40px;
+  border: none;
+  border-radius: 50px 0px 0px 50px;
+}
+#subscribeButton {
+  background-color: #a46c9d;
+  border: none;
+  color: white;
+  width: auto;
+  padding: 15px 32px;
+  text-align: center;
+  font-size: 40px;
+  cursor: pointer;
+  border-radius: 0px 50px 50px 0px;
+  font-family: 'Press Start 2P', cursive;
+}
+/* RESPONSIVE FOR LAOPTOP MODE */
+@media screen and (max-width:1440px) {
+  #subscriptionWrapper h1 {
+    font-size: 4em;
+    width: 70%;
+  }
+
+  #subscriptionWrapper h2 {
+    font-size: 3em;
+  }
+
+  #subscriptionWrapper h3 {
+    font-size: 2em;
+  }
+
+  #emailInput {
+    font-size: 32px;
+  }
+
+  #subscriptionWrapper {
+    padding-bottom: 10px;
+    min-height: 80vh;
+  }
+
+  #subscribeButton {
+    border-radius: 0px 50px 50px 0px;
+    padding:12px;
+    margin:0%;
+  }
+}
+
+/* RESPONSIVENESS TO MOBILE VERSIONS */
+/* SAMSUNG GALAXY S8+ */
+@media only screen
+  and (min-device-width: 320px)
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: portrait) {
+
+    #subscriptionMain {
+      width: 114%;
+    }
+
+}
+/* SAMSUNG GALAXY S8+ */
+
+/* IPHONE SE & IPHONE XR & PIXEL 5 */
+@media only screen
+  and (min-device-width: 375px)
+  and (max-device-width: 667px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: portrait) {
+
+
+}
+/* IPHONE SE & IPHONE XR & PIXEL 5 */
+
+/* IPHONE 12 PRO & SAMSNG GALAXY S20 ULTRA*/
+@media only screen
+  and (min-device-width: 375px)
+  and (max-device-width: 812px)
+  and (-webkit-min-device-pixel-ratio: 3)
+  and (orientation: portrait) {
+
+
+}
+/* IPHONE 12 PRO & SAMSNG GALAXY S20 ULTRA*/
+@media screen and (max-width:840px) {
+  #subscriptionWrapper h1 {
+    font-size: 2em;
+    width: 80%;
+  }
+
+  #subscriptionWrapper h2 {
+    font-size: 1.5em;
+  }
+
+  #emailSection {
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-row-gap: 0.3em;
+  }
+
+  #emailInput {
+    font-size: 32px;
+    border-radius: 0px;
+  }
+
+  #subscriptionWrapper {
+    padding-bottom: 0px;
+    min-height: 60vh;
+  }
+
+  #subscribeButton {
+    border-radius: 50px 50px 50px 50px;
+    padding:0px;
+    margin:3%;
+  }
+}
+
+@media screen and (max-width:500px) {
+  #subscriptionWrapper h1 {
+    font-size: 2em;
+  }
+
+  #subscriptionWrapper h2 {
+    font-size: 1.5em;
+  }
+
+  #emailInput {
+    font-size: 1.5em;
+  }
+
+  #subscribeButton {
+    border-radius: 50px 50px 50px 50px;
+    padding:0px;
+    margin:3%;
+  }
+}
+/* RESPONSIVENESS TO MOBILE VERSIONS */
+/*SUBSCRIPTION MAIN CONTENT*/

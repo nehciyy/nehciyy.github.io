@@ -1,0 +1,126 @@
+/* TUTORIAL MAIN CONTENT */
+/* FONT STYLING */
+.tutorial > h1{
+  font-family: 'Balsamiq Sans', cursive;
+}
+/* HEADER FOR TUTORIAL PAGE */
+.tutorial {
+  margin: 0 6%;
+  font-size: 150%
+}
+
+/* ENTIRE MAIN CONTENT OF BLOG PAGE */
+.column1 {
+  background-color: #919fc6;
+  padding: 2%;
+  margin: 0 1%;
+}
+/* TITLE OF VIDEO */
+.title {
+  margin: 0 12%;
+}
+.title > h2 {
+  font-family: 'Frank Ruhl Libre', serif;
+  font-weight: bold;
+}
+.title > p {
+  font-family: 'Lora', serif;
+}
+/* VIDEO LINKED TO YOUTUBE */
+.youtubeVideo{
+  text-align: center;
+}
+iframe {
+  width: 711px;
+  height: 400px;
+}
+iframe:hover {
+    width:800px;
+    height:500px;
+    display:initial;
+}
+
+/* RESPONSIVE MOBILE VERSION */
+/* DEFAULT RESPONSIVE SETTINGS */
+@media screen and (max-width:500px) {
+  iframe {
+    width: 80%;
+  }
+
+  iframe:hover {
+    width: 90%;
+  }
+}
+/* DEFAULT RESPONSIVE SETTINGS */
+/* DIFFERENT MOBILE VERSION */
+/* SAMSUNG GALAXY S8+ */
+@media only screen
+  and (min-device-width: 320px)
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: portrait) {
+
+    .column1 {
+      padding: 2%;
+      margin: 4%;
+      width:100%;
+    }
+
+    iframe {
+      width: 80%;
+    }
+
+    iframe:hover {
+      width: 90%;
+    }
+}
+/* SAMSUNG GALAXY S8+ */
+
+/* IPHONE SE & IPHONE XR & PIXEL 5 */
+@media only screen
+  and (min-device-width: 375px)
+  and (max-device-width: 667px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: portrait) {
+
+    .column1 {
+      padding: 2%;
+      margin: 4%;
+      width: 84%;
+    }
+
+    iframe {
+      width: 80%;
+    }
+
+    iframe:hover {
+      width: 90%;
+    }
+}
+/* IPHONE SE & IPHONE XR & PIXEL 5 */
+
+/* IPHONE 12 PRO & SAMSNG GALAXY S20 ULTRA*/
+@media only screen
+  and (min-device-width: 375px)
+  and (max-device-width: 812px)
+  and (-webkit-min-device-pixel-ratio: 3)
+  and (orientation: portrait) {
+
+    .column1 {
+      padding: 2%;
+      margin: 4%;
+      width: 93%;
+    }
+
+    iframe {
+      width: 80%;
+    }
+
+    iframe:hover {
+      width: 90%;
+    }
+}
+/* IPHONE 12 PRO & SAMSNG GALAXY S20 ULTRA*/
+
+/* RESPONSIVE MOBILE VERSION */
+/* TUTORIAL MAIN CONTENT */

@@ -1,0 +1,356 @@
+<!Doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> New Arrivals </title>
+  <!-- LINK TO CSS FOR NAVIGATION BAR, SERACH BAR, LOGO, SUCCESSFUL SUBSCRIPTION AND FOOTER -->
+  <link rel="stylesheet" href="Stylesheets/mainstyles.css" />
+  <!-- LINK TO MAIN CONTENT STYLING FOR NEW ARRIVALS PAGE -->
+  <link rel="stylesheet" href="Stylesheets/newarrivals.css" />
+  <!-- AWESOME NOTIFICATIONS STYLESHEET -->
+  <link rel="stylesheet" href="awesomeNotifications/dist/style.css"></link>
+  <!-- GOOGLE FONTS LINK -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans:ital,wght@0,400;0,700;1,400&family=Dancing+Script:wght@700&family=Frank+Ruhl+Libre&family=Lora:ital@0;1&display=swap">
+  <!-- BOOTSTRAP -->
+  <link rel="stylesheet" href="bootstrap-5.1.3-dist/bootstrap-5.1.3-dist/css/bootstrap.min.css">
+  <!-- SOCIAL MEDIA ICONS FOR CONNECT WITH US -->
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+  <!-- SWEETALERT HANDLEBAR -->
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+  <!-- AWESOME NOTIFICATIONS HANDLEBAR -->
+  <script src="awesomeNotifications/dist/index.var.js"></script>
+  <!-- JAVASCRIPT FOR FOOTER SUBSCRIPTION -->
+  <script src="Script/footersubscription.js" defer></script>
+  <!-- NAVIGATION BAR JAVASCRIPT -->
+  <script src="Script/navbar.js" defer></script>
+  <!-- JAVASCRIPT FOR NEW ARRIVAL FILTER -->
+  <script src="Script/filterArrival.js" defer></script>
+
+</head>
+
+<body>
+  <header>
+    <!-- HEADER ABOVE THE NAVIGATION BAR -->
+    <div class="topnav">
+      <!-- LOGO(makeupYM) -->
+      <div class="logo">
+        <a href="index.html" id="logo1">makeupYM</a>
+      </div>
+      <!-- SEARCH BAR -->
+      <div class="search-container">
+        <form action="/action_page.php">
+          <input type="text" placeholder="Search" name="search" id="search">
+          <button type="submit" id="searchbtn"><i class="fa fa-search"></i></button>
+        </form>
+      </div>
+    </div>
+
+    <br><br>
+    <!-- NAVIGATION BAR -->
+    <nav id="navbar">
+      <!-- CREATING A HAMBURGER MENU TAB -->
+      <a href="#" class="toggle-button">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </a>
+      <!-- LINKS OF NAV BAR -->
+      <div class="navbar-links">
+        <ul>
+          <li>
+            <button type="button" class="navigation">
+              <a href="newarrivals.html" style="text-decoration: none;color:black">New Arrivals</a>
+            </button>
+          </li>
+          <li>
+            <button type="button" class="navigation">
+              <a href="trending.html" style="text-decoration: none;color:black">Trending</a>
+            </button>
+          </li>
+          <li>
+            <button type="button" class="navigation">
+              <a href="subscribe.html" style="text-decoration: none;color:black">Subscribe</a>
+            </button>
+          </li>
+          <li>
+            <button type="button" class="navigation">
+              <a href="blog.html" style="text-decoration: none;color:black">Blog</a>
+            </button>
+          </li>
+          <li>
+            <button type="button" class="navigation">
+              <a href="tutorial.html" style="text-decoration: none;color:black">Tutorial</a>
+            </button>
+          </li>
+          <li>
+            <button type="button" class="navigation">
+              <a href="report.html" target="_blank" style="text-decoration: none;color:black">Report</a>
+            </button>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <br>
+  <!-- MAIN CONTENT -->
+  <main>
+    <!-- HEADER FOR NEW ARRIVAL PAGE -->
+    <div class="heading" style="margin:0 2%; font-size:150%">
+      <h1>New Arrivals</h1>
+    </div>
+    <!-- ENTIRE MAIN CONTENT OF NEW ARRIVALS PAGE -->
+    <div class="combineArrival">
+      <!-- FILTER BUTTONS AND HEADER -->
+      <div class="filterArrival">
+        <h3>Filter</h3>
+        <button type="button" class="filterButtonArrival" onclick="showAll()"> All </button>
+        <button type="button" class="filterButtonArrival" onclick="showFace()"> Face </button>
+        <button type="button" class="filterButtonArrival" onclick="showEyes()"> Eyes </button>
+        <button type="button" class="filterButtonArrival" onclick="showLips()"> Lips </button>
+        <button type="button" class="filterButtonArrival" onclick="showScent()"> Scent </button>
+        <button type="button" class="filterButtonArrival" onclick="showRemover()"> Makeup Remover </button>
+        <button type="button" class="filterButtonArrival" onclick="showCare()"> Skincare </button>
+      </div>
+      <!-- GRID CONTAINER FOR THE MAIN CONTENTS (9 ITEMS) -->
+      <div class="grid-containerArrival">
+        <!-- GRID CONTAINER FOR INDIVIDUAL ITEM -->
+        <div class="grid-item scent">
+          <!-- IMAGE OF ITEM -->
+          <img class="arrivalImage" alt="TOM FORD BEAUTY Rose De Chine Eau De Parfum" src="Images/new_arrival_image1.png">
+          <!-- TITLE, DESCRIPTION AND PRICE OF ITEM -->
+          <div class="textArrival">
+            <h3 style="font-size: 80%">
+              <b>TOM FORD BEAUTY
+                Rose De Chine Eau De Parfum</b>
+            </h3>
+            <p style="font-size:70%">
+              <b>Description:</b><br>
+              Fragrance Family: Floral <br>
+              Formulation: Liquid, Spray<br><br>
+
+              <b>SGD$375.00</b>
+            </p>
+          </div>
+        </div>
+
+        <!-- GRID CONTAINER FOR INDIVIDUAL ITEM -->
+        <div class="grid-item face">
+          <!-- IMAGE OF ITEM -->
+          <img class="arrivalImage" alt="MAC COSMETICS Lightful C³ Naturally Flawless Foundation with Light-Diffusing Complex SPF 35/PA++" src="Images/new_arrival_image2.png">
+          <!-- TITLE, DESCRIPTION AND PRICE OF ITEM -->
+          <div class="textArrival">
+            <h3 style="font-size: 80%">
+              <b>MAC COSMETICS
+                Lightful C³ Naturally Flawless Foundation with Light-Diffusing Complex SPF 35/PA++
+              </b>
+            </h3>
+            <p style="font-size: 70%">
+              <b>Description:</b><br>
+              Skin Type: Combination, Dry, Normal, Oily<br>
+              Finish: Natural, Radiant<br>
+              Coverage: Medium, Sheer<br>
+              Formulation: Liquid<br>
+              Benefits: Sun Protection<br><br>
+              <b>SGD$69.00</b>
+
+            </p>
+          </div>
+        </div>
+        <!-- GRID CONTAINER FOR INDIVIDUAL ITEM -->
+        <div class="grid-item skinCare">
+          <!-- IMAGE OF ITEM -->
+          <img class="arrivalImage" alt="MAC COSMETICS Lightful C³ Radiant Hydration Tone Up Eye Cream" src="Images/new_arrival_image3.png">
+          <!-- TITLE, DESCRIPTION AND PRICE OF ITEM -->
+          <div class="textArrival">
+            <h3 style="font-size: 80%">
+              <b>MAC COSMETICS
+                Lightful C³ Radiant Hydration Tone Up Eye Cream
+              </b>
+            </h3>
+            <p style="font-size: 70%">
+              <b>Description:</b><br>
+              Function: Moisturise, Treatment<br>
+              Skin Type: Combination, Dry, Normal, Oily<br>
+              Skin Concerns: Dark Circles, Dryness, Dullness, Fine Lines & Wrinkles, Uneven Skin Texture, Uneven Skin Tone<br>
+              Formulation: Cream<br>
+              Skincare By Age: 20s, 30s, 40s, 50+, Under 20<br><br>
+              <b>SGD$70.00</b>
+
+            </p>
+          </div>
+        </div>
+        <!-- GRID CONTAINER FOR INDIVIDUAL ITEM -->
+        <div class="grid-item skinCare">
+          <!-- IMAGE OF ITEM -->
+          <img class="arrivalImage" alt="THE ORDINARY Retinol 1% in Squalane" src="Images/new_arrival_image4.png">
+          <!-- TITLE, DESCRIPTION AND PRICE OF ITEM -->
+          <div class="textArrival">
+            <h3 style="font-size: 80%">
+              <b>THE ORDINARY
+                Retinol 1% in Squalane
+              </b>
+            </h3>
+            <p style="font-size: 70%">
+              <b>Description:</b><br>
+              Skin Type: Combination, Dry, Normal, Oily<br>
+              Skin Concerns: Ageing, Fine Lines & Wrinkles<br>
+              Skincare By Age: 20s, 30s, 40s, 50+<br><br>
+              <b>SGD$16.00</b>
+
+            </p>
+          </div>
+        </div>
+        <!-- GRID CONTAINER FOR INDIVIDUAL ITEM -->
+        <div class="grid-item scent">
+          <!-- IMAGE OF ITEM -->
+          <img class="arrivalImage" alt="GUCCI Guilty Eau De Parfum Intense Pour Femme" src="Images/new_arrival_image5.png">
+          <!-- TITLE, DESCRIPTION AND PRICE OF ITEM -->
+          <div class="textArrival">
+            <h3 style="font-size: 80%">
+              <b>GUCCI
+                Guilty Eau De Parfum Intense Pour Femme
+              </b>
+            </h3>
+            <p style="font-size: 70%">
+              <b>Description:</b><br>
+              Fragrance Family: Earthy & Woody, Floral<br>
+              Formulation: Liquid, Spray<br><br>
+              <b>SGD$195.00</b>
+
+            </p>
+          </div>
+        </div>
+        <!-- GRID CONTAINER FOR INDIVIDUAL ITEM -->
+        <div class="grid-item skinCare">
+          <!-- IMAGE OF ITEM -->
+          <img class="arrivalImage" alt="STARSKIN Red Carpet Ready™ Hand Super Hydrating Foil Mask Gloves" src="Images/new_arrival_image6.png">
+          <!-- TITLE, DESCRIPTION AND PRICE OF ITEM -->
+          <div class="textArrival">
+            <h3 style="font-size: 80%">
+              <b>STARSKIN
+                Red Carpet Ready™ Hand Super Hydrating Foil Mask Gloves
+              </b>
+            </h3>
+            <p style="font-size: 70%">
+              <b>Description:</b><br>
+              Skin Type: Combination, Dry, Normal, Oily<br>
+              Skin Concerns: Dryness<br>
+              Formulation: Sheet<br>
+              Skincare By Age: 20s, 30s, 40s, 50+, Under 20<br><br>
+              <b>SGD$17.00</b>
+
+            </p>
+          </div>
+        </div>
+        <!-- GRID CONTAINER FOR INDIVIDUAL ITEM -->
+        <div class="grid-item skinCare">
+          <!-- IMAGE OF ITEM -->
+          <img class="arrivalImage" alt="LAURA MERCIER Blush Colour Infusion Lunar New Year (Limited Edition)" src="Images/new_arrival_image7.png">
+          <!-- TITLE, DESCRIPTION AND PRICE OF ITEM -->
+          <div class="textArrival">
+            <h3 style="font-size: 80%">
+              <b>LAURA MERCIER
+                Blush Colour Infusion Lunar New Year (Limited Edition)
+              </b>
+            </h3>
+            <p style="font-size: 70%">
+              <b>Description:</b><br>
+              Formulation: Pressed Powder<br><br>
+              <b>SGD$49.00</b>
+
+            </p>
+          </div>
+        </div>
+        <!-- GRID CONTAINER FOR INDIVIDUAL ITEM -->
+        <div class="grid-item skinCare">
+          <!-- IMAGE OF ITEM -->
+          <img class="arrivalImage" alt="BOBBI BROWN Vitamin Enriched Face Base Moisturizer and Primer Duo" src="Images/new_arrival_image8.png">
+          <!-- TITLE, DESCRIPTION AND PRICE OF ITEM -->
+          <div class="textArrival">
+            <h3 style="font-size: 80%">
+              <b>BOBBI BROWN
+                Vitamin Enriched Face Base Moisturizer and Primer Duo
+              </b>
+            </h3>
+            <p style="font-size: 70%">
+              <b>Description:</b><br>
+              Function: Hydrate, Smoothen<br>
+              Skin Type: Combination, Dry, Normal, Oily<br>
+              Skin Concerns: Dryness, Uneven Skin Texture<br>
+              Formulation: Cream<br>
+              Skincare By Age: 20s, 30s, 40s, 50+, Under 20<br>
+              Benefits: Sun Protection<br><br>
+              <b>SGD$115.00</b>
+
+            </p>
+          </div>
+        </div>
+        <!-- GRID CONTAINER FOR INDIVIDUAL ITEM -->
+        <div class="grid-item lips">
+          <!-- IMAGE OF ITEM -->
+          <img class="arrivalImage" alt="ESTÉE LAUDER Pure Color Revitalizing Crystal Lip Balm" src="Images/new_arrival_image9.png">
+          <!-- TITLE, DESCRIPTION AND PRICE OF ITEM -->
+          <div class="textArrival">
+            <h3 style="font-size: 80%">
+              <b>ESTÉE LAUDER
+                Pure Color Revitalizing Crystal Lip Balm
+              </b>
+            </h3>
+            <p style="font-size: 70%">
+              <b>Description:</b><br>
+              Formulation: Balm<br>
+              Benefits: Hydrating<br><br>
+              <b>SGD$49.00</b>
+
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+
+  </main>
+
+  <br><br>
+  <!-- FOOTER -->
+  <footer id="footer">
+    <!-- FOOTER ROW CONTAINS "ABOUT US","CONNECT WITH US" AND "SUBSCRIBE TO NEWSLETTER" DISPLAYED AS FLEX SO THEY ARE ALIGNED HORIZONTALLY -->
+    <div class="footerRow">
+      <!-- ABOUT US -->
+      <div class="aboutus">
+        <h2>About Us</h2>
+        <p>Careers</p>
+        <p>Term of Use</p>
+        <p>Privacy Policy</p>
+        <p>FAQ</p>
+      </div>
+      <!-- CONNTECT WITH US -->
+      <div class="connectIcons">
+        <h2>Connect with us</h2>
+        <a href="#facebook" style="font-size:200%"><i class="fab fa-facebook"></i></a>
+        <a href="#instagram" style="font-size:200%"><i class="fab fa-instagram"></i></a>
+        <a href="#pinterest" style="font-size:200%"><i class="fab fa-pinterest-p"></i></a>
+        <a href="#youtube" style="font-size:200%"><i class="fab fa-youtube"></i></a>
+        <a href="#twitter" style="font-size:200%"><i class="fab fa-twitter"></i></a>
+      </div>
+      <!-- SUBSCRIBE TO OUR NEWSLETTER -->
+      <div class="subscribeButton">
+        <h2>Subscribe To Our Newsletter</h2>
+        <input type="email" name="email" id="subscribeEmail" placeholder="Enter Your Email address">
+        <button type="button" class="navigation" id="subscribeEmailbtn" style="margin:0px">
+          <a href="#" style="text-decoration: none; color:white">Subscribe</a>
+        </button>
+      </div>
+    </div>
+    <!-- COPYRIGHT -->
+    <div class="copyright" style="text-align:center">
+      <p>&copy; 2022 makeupYM by Yi-Chen Chiang </p>
+    </div>
+  </footer>
+
+</body>
+
+</html>

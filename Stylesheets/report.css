@@ -1,0 +1,60 @@
+/* REPORT MAIN CONTENT */
+body {
+  padding-left: 50px;
+  padding-right: 50px;
+  margin: 0px;
+  max-width: 100%;
+  overflow-x: hidden;
+  font-family: 'Noto Sans', sans-serif;
+}
+/* REPORT HEADER */
+.reportTitle {
+  margin-bottom: 10px;
+}
+/* CANDIDATE INFORMATION */
+#my-info {
+  display: flex;
+  justify-content: space-between;
+  font-weight: bold;
+}
+
+#number {
+  display: table;
+}
+/* QUESTIONS */
+.questions {
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+/* ANSWERS */
+.answers {
+  display: block;
+  font-weight: 200;
+  margin-bottom: 16px;
+}
+/* APPENDICES */
+.appendices {
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+
+.reference {
+  font-size: 20px;
+}
+/* WIREFRAME */
+.wireframe {
+  width: 100vw;
+  text-align: center;
+}
+/* MOCKUP */
+.mockup {
+  width: 1000px;
+  margin: auto;
+}
+
+.mockup img {
+  width: 100%;
+  height: 100%;
+}
+
+/* REPORT MAIN CONTENT */

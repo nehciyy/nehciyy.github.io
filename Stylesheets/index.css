@@ -1,0 +1,113 @@
+/* MAIN PAGE CONTENT */
+body{
+  font-family: 'Balsamiq Sans', cursive;
+}
+/* SLIDESHOW */
+img {
+  vertical-align: middle;
+}
+
+.mySlides {
+  display: none;
+  width: 100%;
+  height: 400px;
+}
+
+/* SAMSUNG GALAXY S8+ */
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+  .mySlides {
+    display: none;
+    width: 104%;
+    height: 400px;
+  }
+
+  #slideShowRightBtn {
+    right: 0%;
+  }
+}
+
+/* IPHONE SE & IPHONE XR & PIXEL 5 */
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+  .mySlides {
+    display: none;
+    width: 104%;
+    height: 400px;
+  }
+
+  #slideShowRightBtn {
+    right: 0%;
+  }
+}
+
+/* IPHONE 12 PRO & SAMSNG GALAXY S20 ULTRA*/
+@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: portrait) {
+  .mySlides {
+    display: none;
+    width: 100%;
+    height: 400px;
+  }
+
+  #slideShowRightBtn {
+    right: 0%;
+  }
+}
+
+/* NEW ARRIVALS + TRENDING IMAGES AND LINK TABS */
+/* ENTIRE CONTAINER CONTAINING BOTH NEW ARRIVALS AND TRENDING */
+.bottom-container {
+  display: grid;
+  grid-template-columns: 40% 40%;
+  margin-left: 5%;
+  grid-gap: 11rem;
+}
+/* CONTAINER CONTAINING INDIVIDUAL CONTENT OF NEW ARRIVALS AND TRENDING SEPARATELY */
+.column {
+  width: 100%;
+  float: left;
+  position: relative;
+}
+
+.column:hover{
+  width: 110%;
+}
+/* IMAGE SIZE */
+.column img {
+  width: 100%;
+  height: 100%;
+}
+/* RESPECTIVE CONTAINER CONTENT STYLING */
+.column .text {
+  width: 100%;
+  position: absolute;
+  background: #876fa1;
+  color: white;
+  bottom: 0;
+  opacity: 0;
+  text-align: center;
+  -webkit-transition: visibility 0s, opacity 0.3s linear;
+  transition: visibility 0s, opacity 0.3s linear;
+}
+/* ANIMATION OF TEXT WHEN HOVER OVER IMAGE */
+.column:hover div {
+  visibility: visible;
+  opacity: 0.7;
+}
+/* TEXT OF NEW ARRIVALS AND TRENDING */
+.text > h2{
+  font-family: 'Balsamiq Sans', cursive;
+  margin:0;
+  padding:1% 0;
+}
+/* DEFAULT RESPONSIVE SIZE */
+@media screen and (max-width:500px) {
+  .bottom-container {
+    grid-template-columns: 100%;
+    grid-gap: 10%;
+    margin:0;
+  }
+
+  .column .text {
+    text-align: center;
+  }
+}
+/* MAIN PAGE CONTENT */

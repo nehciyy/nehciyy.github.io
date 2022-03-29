@@ -1,0 +1,358 @@
+/* NAVIGATION BAR + LOGO + SERACH BAR */
+/* HAMBURGER ICON STYLING */
+.toggle-button .bar {
+  height: 3px;
+  width: 100%;
+  background-color: white;
+  border-radius: 10px;
+}
+/* HEADER ABOVE THE NAVIGATION BAR */
+.topnav {
+  margin: auto;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  background-color: #876fa1;
+}
+/* LOGO(makeupYM) */
+.logo {
+  text-align: center;
+  width: auto;
+}
+#logo1 {
+  font-size: 300%;
+  color: white;
+  text-decoration: none;
+  width: auto;
+  font-family: 'Dancing Script';
+}
+/* SEARCH BAR */
+.search-container {
+  float: right;
+  margin: 20px;
+}
+#search {
+  font-size: 100%;
+  border-radius: 50px;
+}
+#searchbtn {
+  font-size: 100%;
+  border-radius: 10px;
+  background-color: white;
+}
+/* LINKS OF NAV BAR */
+a {
+  text-decoration: none;
+}
+.navbar-links {
+  text-align: center;
+  justify-content: space-between;
+  margin-right: 2%;
+}
+.navbar-links ul {
+  text-align: center;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+}
+
+.navigation {
+  font-family: 'Balsamiq Sans', cursive;
+  font-size: 150%;
+  color: rgba(108, 88, 179, 0.75);
+  letter-spacing: 2px;
+  line-height: 30px;
+  border: 5px solid rgba(108, 89, 179, 0.75);
+  border-radius: 40px;
+  background: transparent;
+  transition: all 0.3s ease 0s;
+}
+.navigation:hover {
+  color: white;
+  background: rgba(108, 88, 179, 0.75);
+  border: 5px solid rgba(108, 89, 179, 0.75);
+}
+
+a:link, a:hover, a:active, a:checked, a:visited{
+  color:black;
+}
+/* NAVIGATION BAR + LOGO + SERACH BAR */
+
+/* FOOTER */
+#footer {
+  justify-content: space-between;
+  background-color: #876fa1;
+  color: white;
+}
+
+/* FOOTER ROW CONTAINS "ABOUT US",
+"CONNECT WITH US" AND "SUBSCRIBE
+TO NEWSLETTER" DISPLAYED AS FLEX SO THEY ARE ALIGNED HORIZONTALLY */
+.footerRow {
+  display: flex;
+  justify-content: space-between;
+  color: white;
+  align-items: center;
+  margin: 0 4%;
+  margin-left: 20px;
+}
+/* ABOUT US */
+.aboutus {
+  padding-top: 10px;
+  margin: 0 10px;
+  margin-top: 3px;
+}
+.aboutus > h2{
+  font-family: 'Balsamiq Sans', cursive;
+}
+.aboutus > p{
+  font-family: 'Frank Ruhl Libre', serif;
+}
+/* CONNTECT WITH US */
+.connectIcons {
+  padding-top: 10px;
+}
+.connectIcons > h2{
+  font-family: 'Balsamiq Sans', cursive;
+}
+/* icon size */
+.connectIcons {
+  font-size: inherit;
+}
+/* SPACING BETWEEN ICONS AND COLOUR OF ICON */
+.fa-facebook,
+.fa-instagram,
+.fa-linkedin-in,
+.fa-pinterest-p,
+.fa-youtube,
+.fa-twitter,
+.fa-weibo
+{
+  padding-right: 5px;
+  color: white;
+}
+
+/* SUBSCRIBE TO OUR NEWSLETTER */
+#subscribeEmail{
+  font-size: 141%;
+  border-radius: 60px;
+}
+.subscribeButton {
+  padding-top: 10px;
+  margin: 0 10px;
+}
+.subscribeButton > h2{
+  font-family: 'Balsamiq Sans', cursive;
+}
+
+/* COPYRIGHT */
+.copyright{
+  font-family: 'Lora', serif;
+}
+/* FOOTER */
+
+/* RESPONSIVE NAVIGATION BAR AND FOOTER */
+/* DIFFERENT MOBILE VERSION OF NAVIGATION BAR */
+/* SAMSUNG GALAXY S8+ */
+@media only screen
+  and (min-device-width: 320px)
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: portrait) {
+
+    .toggle-button {
+      position: absolute;
+      /* pushing from top of screen */
+      top: .75rem;
+      margin-left: 90%;
+      display: none;
+      /* direction of content to be arrange */
+      flex-direction: column;
+      justify-content: space-between;
+      width: 30px;
+      height: 21px;
+    }
+
+    #footer{
+      right:0px;
+      overflow: auto;
+      width:480px;
+    }
+
+    .footerRow {
+      display: inline-block;
+      text-align: center;
+      align-items: center;
+      justify-content: space-around;
+      bottom:0;
+      right:0;
+      margin-left:0px;
+    }
+    .copyright{
+      padding-right:96px;
+    }
+
+}
+/* SAMSUNG GALAXY S8+ */
+
+/* IPHONE SE & IPHONE XR & PIXEL 5 */
+@media only screen
+  and (min-device-width: 375px)
+  and (max-device-width: 667px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: portrait) {
+    .toggle-button {
+      position: absolute;
+      /* pushing from top of screen */
+      top: .75rem;
+      margin-left: 83%;
+      display: none;
+      /* direction of content to be arrange */
+      flex-direction: column;
+      justify-content: space-between;
+      width: 30px;
+      height: 21px;
+    }
+
+    .footerRow {
+      margin-left:0px;
+    }
+
+    #subscribeEmail{
+      font-size:126%;
+    }
+    .copyright{
+      padding-right:66px;
+    }
+
+}
+/* IPHONE SE & IPHONE XR & PIXEL 5 */
+
+/* IPHONE 12 PRO & SAMSNG GALAXY S20 ULTRA*/
+@media only screen
+  and (min-device-width: 375px)
+  and (max-device-width: 812px)
+  and (-webkit-min-device-pixel-ratio: 3)
+  and (orientation: portrait) {
+    .toggle-button {
+      position: absolute;
+      /* pushing from top of screen */
+      top: .75rem;
+      margin-left: 85%;
+      display: none;
+      /* direction of content to be arrange */
+      flex-direction: column;
+      justify-content: space-between;
+      width: 30px;
+      height: 21px;
+    }
+
+    .footerRow {
+      margin-left:0px;
+    }
+
+
+}
+/* IPHONE 12 PRO & SAMSNG GALAXY S20 ULTRA*/
+/* DIFFERENT MOBILE VERSION OF NAVIGATION BAR */
+
+/* To view in a small screen side of footer  */
+/* DEFAULTS OF NAVIGATION BAR CONTENTS IN MOBILE VERSION */
+@media screen and (max-width: 500px) {
+  .topnav {
+    margin: auto;
+    padding: 0px;
+    display: grid;
+    position: relative;
+    overflow: hidden;
+    width: 800px;
+  }
+
+  .toggle-button {
+    position: absolute;
+    /* pushing from top of screen */
+    top: .75rem;
+    margin-left: 91%;
+    display: flex;
+    /* direction of content to be arrange */
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+  }
+
+  .navbar-links {
+    display: none;
+    width: 100%;
+  }
+
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .navbar-links ul {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .navbar-links li {
+    text-align: center;
+  }
+
+  .navbar-links.active {
+    display: flex;
+  }
+
+  .logo {
+    float: left;
+    width: auto;
+  }
+
+  .search-container {
+    float: left;
+  }
+
+  #search {
+    font-size: 80%;
+    float: left;
+  }
+
+  #searchbtn {
+    font-size: 80%;
+    float: left;
+  }
+
+  .footerRow {
+    display: inline-block;
+    text-align: center;
+    align-items: center;
+    justify-content: space-around;
+    bottom:0;
+    right:0;
+    margin-left:35px;
+  }
+}
+
+@media handheld, only screen and (max-width: 767px) {
+.navigation {
+  font-size: 150%;
+  margin: 6px;
+  padding: 5px;
+  color: rgba(108, 88, 179, 0.75);
+  letter-spacing: 2px;
+  line-height: 30px;
+  border: 5px solid rgba(108, 89, 179, 0.75);
+  border-radius: 40px;
+  background: transparent;
+  transition: all 0.3s ease 0s;
+}
+
+#subscribeEmailbtn {
+  font-size: 80%;
+  }
+}
+
+}
+/* DEFAULTS OF NAVIGATION BAR AND FOOTER CONTENTS IN MOBILE VERSION */
+/* RESPONSIVE NAVIGATION BAR AND FOOTER */
